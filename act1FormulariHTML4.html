@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Activitat Formulari</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" >
+</head>
+<body>
+    <form name="datos" action="document.php" method="GET" enctype="multipart/formadata">
+    	<label for="nombre">Nombre: </label>
+    	<input type="text" name="nombre" id="nombre"/><br/>
+    	<label for="pwd">Password: </label>
+    	<input type="password" name="pwd" id="pwd"/><br/>
+    	<label>sexo:</label>
+    		<input type="radio" name="sexo" id="hombre" value="hombre"/>
+    		<label for="hombre">Hombre</label>
+    	
+    		<input type="radio" name="sexo" id="mujer" value="mujer"/>
+    		<label for="mujer">Mujer</label>
+		</br>
+
+    	<label>Carnet de conducir</label>
+    		<input type="checkbox" name="carnetA" id="cA"/>
+    		<label for="cA">Carnet A</label>
+    		<input type="checkbox" name="carnetB" id="cB"/>
+    		<label for="cB">Carnet B</label>
+
+    	</br>
+    	<label for="foto">Foto: </label>
+    	<input type="file" name="foto" id="foto"/><br/>
+
+    	<select name ="idioma">
+    		<option>Español</option>
+    		<option>Ingles</option>
+    		<option>Frances</option>
+    	</select>
+    	</br>
+    	<input type="submit" name="enviar" value="enviar"/>
+    	<input type="image" src="https://canadaflagshop.com/shop/images/ussr.gif"> 
+
+
+    </form>
+</body>
+</html>
