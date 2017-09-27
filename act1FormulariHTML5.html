@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>EJEMPLO FORM HTML5</h1></header>
+    <main>
+        <form name="datos" method="post" action="procesa.php">
+            <label for="nombre">Nombre:</label>
+                <input type="text" name"nombre" id="nombre" autofocus required placeholder="nombre">
+                <br/>
+            <label for="correo">Email:</label>
+                <input type="email" name"correo" id="correo">
+                <br/>
+            <label for="fenac">Fecha nacimiento:</label>
+                <input type="date" name"fenac" id="fenac">
+                <br/>
+            <label for="edad">Edad :</label>
+                <input type="number" name"edad" id="edad">
+                <br/>
+            <label for="nota">Nota:</label>
+                <input type="range" name"nota" id="nota" min="0" max="10">
+                <br/>
+            <label for="tlf">Telefono:</label>
+                <input type="tel" name"tlf" id="tlf">
+                <br/>
+            <label for="url">URL:</label>
+                <input type="url" name"url" id="url">
+                <br/>
+            <label for="color">Color:</label>
+                <input type="color" name"color" id="color">
+                <br/>
+            <input type="submit" name="enviar" value="Enviar">
+            <input type="reset" name="borrar" value="Borrar"> 
+        
+
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>
