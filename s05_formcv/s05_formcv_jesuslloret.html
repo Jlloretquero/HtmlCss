@@ -36,7 +36,7 @@
     <nav></nav>
     <main>
         <form name="formulario" action="document.php" method="GET" enctype="multipart/formadata">
-            <table  style="width:100%">
+            <table style="width:100%">
                 <tr>
                     <td>
                         <section>
@@ -81,19 +81,25 @@
                             <fieldset>
                                 <legend>EXPERIENCIA LABORAL</legend>
                                 <label for="empresa1">Empresa 1:</label>
-                                <input type="text" name "empresa1" id="empresa1"  placeholder="nombre de la empresa">
+                                <input type="text" name "empresa1" id="empresa1" placeholder="nombre de la empresa">
                                 <label for="info1">Otro idioma</label>
-                                <input type=textarea name="info1" id="info1" placeholder="Puesto,logros,años,etc.">
+                                <textarea name="info1" id="info1" placeholder="Puesto,logros,años,etc."></textarea>
                                 <br/>
-                                <label for="empresa2">Empresa 2:</label>
-                                <input type="text" name "empresa2" id="empresa2"  placeholder="nombre de la empresa">
-                                <label for="info2">Otro idioma</label>
-                                <input type=textarea name="info2" id="info2" placeholder="Puesto,logros,años,etc.">
-                                <br/>
+
+
+                                <div style="text-align:top">
+                                    <label for="empresa2">Empresa 2:</label>
+                                    <input type="text" name "empresa2" id="empresa2" placeholder="nombre de la empresa">
+                                    <label for="info2">Otro idioma</label>
+                                    <textarea name="info2" id="info2" placeholder="Puesto,logros,años,etc."></textarea>
+
+                                </div>
+
+
                                 <label for="empresa3">Empresa 3:</label>
-                                <input type="text" name "empresa3" id="empresa3"  placeholder="nombre de la empresa">
+                                <input type="text" name "empresa3" id="empresa3" placeholder="nombre de la empresa">
                                 <label for="info3">Otro idioma</label>
-                                <input type=textarea name="info3" id="info3" placeholder="Puesto,logros,años,etc.">
+                                <textarea name="info3" id="info3" placeholder="Puesto,logros,años,etc."></textarea>
                                 <br/>
                             </fieldset>
                         </section>
@@ -158,7 +164,7 @@
                                 <label for="basico">Basico</label>
                                 </br>
                                 <label for="area">Otro idioma</label>
-                                <input type=textarea name="area" id="area" placeholder="Introduce aqui si tienes conocimientos de otros idiomas">
+                                <textarea name="area" id="area" placeholder="Introduce aqui si tienes conocimientos de otros idiomas"></textarea>
                             </fieldset>
                         </section>
                     </td>
@@ -168,14 +174,14 @@
             <section>
                 <fieldset>
                     <legend>EXTRAS</legend>
-                    <label for="url">:</label>
-                    <input type="url" name"url" id="url" placeholder="red social">
+                    <label for="url">Pagina de interes:</label>
+                    <input type="url" name "url" id="url" placeholder="red social">
                     <br/>
-                    <label for="url">URL:</label>
-                    <input type="url" name"url" id="url" placeholder="infojobs">
+                    <label for="url">Pagina de interes:</label>
+                    <input type="url" name "url" id="url" placeholder="infojobs">
                     <br/>
-                    <label for="url">URL:</label>
-                    <input type="url" name"url" id="url" placeholder="linkedin">
+                    <label for="url">Pagina de interes:</label>
+                    <input type="url" name "url" id="url" placeholder="linkedin">
                     <br/>
                 </fieldset>
             </section>
