@@ -1,0 +1,51 @@
+nav {
+    text-align: center;
+    background-color: #474546;
+    padding: 10px;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    background-color: #E3E0D6;
+    margin: 20px;
+}
+
+.apartados {
+    background-color: #ADACA9;
+}
+
+.ancla {
+    text-align: right;
+}
+
+.foto1 {
+    width: 100px;
+    height: 100px;
+}
+
+.i {
+    text-align: center;
+}
+
+.iconos {
+    width: 50px;
+    height: 50px;
+}
+
+footer {
+    text-align: center;
+    background-color: #474546;
+    padding: 10px;
+}
+
+a {
+    color: black;
+}
+
+.secciones{
+    padding: 20px;
+}
