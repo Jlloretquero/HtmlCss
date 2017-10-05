@@ -1,0 +1,46 @@
+.ancla{
+    
+float: right;
+
+}
+header {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    background-color: #474546;
+    padding: 10px;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #474546;
+    padding: 10px;
+}
+
+legend {
+    background-color: #1993A8;
+    vertical-align: top;
+    text-align: center;
+}
+
+td {
+    vertical-align: top;
+}
+
+.info {
+    width: 100%;
+}
+
+nav {
+    text-align: center;
+    background-color: #474546;
+    padding: 10px;
+    padding: 20px;
+}
+
+.secciones {
+    padding: 20px;
+}

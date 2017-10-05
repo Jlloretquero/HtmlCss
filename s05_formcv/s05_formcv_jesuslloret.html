@@ -8,60 +8,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulario CV</title>
     <link rel="stylesheet" href="bootstrap.min.css">
-    <script src="./s05_formcv/dropzone.js"></script>
-    <style>
-        header {
-            text-align: center;
-        }
+    <link rel="stylesheet" href="s05_formcv_jesuslloret.css">
 
-        nav {
-            text-align: center;
-            background-color: #474546;
-            padding: 10px;
-            padding: 20px;
-        }
-
-        footer {
-            text-align: center;
-            background-color: #474546;
-            padding: 10px;
-        }
-    </style>
 </head>
 
 <body>
     <header>
         <h1>Formulario CV</h1>
+        <a name="arriba"></a>
     </header>
-    <nav></nav>
+    <nav>
+        <a class="secciones" href="#Apartado1">Informacion personal</a>
+        <a class="secciones" href="#Apartado1">Titulos</a>
+        <a class="secciones" href="#Apartado2">Experiencia</a>
+        <a class="secciones" href="#Apartado2">Idiomas</a>
+        <a class="secciones" href="#Apartado3">Extras</a>
+    </nav>
     <main>
         <form name="formulario" action="document.php" method="GET" enctype="multipart/formadata">
             <table style="width:100%">
                 <tr>
                     <td>
                         <section>
+                            <a name="Apartado1"></a>
                             <fieldset>
-                                <legend>INFORMACION PERSONAL</legend>
-                                <label for="nombre">Nombre:</label>
-                                <input type="text" name "nombre" id="nombre" autofocus required placeholder="nombre">
+                                <legend>
+                                    INFORMACION PERSONAL
+                                    <a class="ancla" href="#arriba" title="Ir Arriba">Ir arriba</a>
+                                </legend>
+                                <label class="info" for="nombre">Nombre:</label>
+                                <input type="text" name "nombre" id="nombre" autofocus required maxlength="10">
                                 <br/>
-                                <label for="apellidos">Apellidos:</label>
-                                <input type="text" name "apellidos" id="apellidos" autofocus required placeholder="apellidos">
+                                <label class="info" for="apellidos">Apellidos:</label>
+                                <input type="text" name "apellidos" id="apellidos" required maxlength="20">
                                 <br/>
-                                <label for="edad">Edad :</label>
-                                <input type="number" name "edad" id="edad">
+                                <label class="info" for="edad">Edad: </label>
+                                <input type="number" name "edad" id="edad" required>
                                 <br/>
-                                <label for="fenac">Fecha nacimiento:</label>
-                                <input type="date" name "fenac" id="fenac">
+                                <label class="info" for="fenac">Fecha nacimiento:</label>
+                                <input type="date" name "fenac" id="fenac" required>
                                 <br/>
-                                <label for="correo">Email:</label>
-                                <input type="email" name "correo" id="correo">
+                                <label class="info" for="correo">Email:</label>
+                                <input type="email" name "correo" id="correo" required>
                                 <br/>
-                                <label for="tlf">Telefono:</label>
-                                <input type="tel" name "tlf" id="tlf">
+                                <label class="info" for="tlf">Telefono:</label>
+                                <input type="tel" name "tlf" id="tlf" required>
                                 <br/>
-                                <label for="foto">Foto Personal: </label>
-                                <input type="file" name="foto" id="foto" />
+                                <label class="info" for="foto">Foto Personal: </label>
+                                <input type="file" name="foto" id="foto" / required>
                                 <br/>
 
                             </fieldset>
@@ -70,7 +64,30 @@
 
                     <td>
                         <fieldset>
-                            <legend>TITULOS</legend>
+                            <legend>
+                                TITULOS
+                                <a class="ancla" href="#arriba" title="Ir Arriba">Ir arriba</a>
+                            </legend>
+                            <div>
+                                <h5>Titulo1</h5>
+                                <input type="text" name "año1" id="año1" placeholder="Año">
+                                <input type="text" name "lugar1" id="lugar1" placeholder="Lugar">
+                                <input type="text" name "titulo1" id="titulo1" placeholder="Titulo">
+                            </div>
+                            <br>
+                            <div>
+                                <h5>Titulo2</h5>
+                                <input type="text" name "año2" id="año2" placeholder="Año">
+                                <input type="text" name "lugar2" id="lugar2" placeholder="Lugar">
+                                <input type="text" name "titulo2" id="titulo2" placeholder="Titulo">
+                            </div>
+                            <br>
+                            <div>
+                                <h5>Titulo3</h5>
+                                <input type="text" name "año3" id="año3" placeholder="Año">
+                                <input type="text" name "lugar3" id="lugar3" placeholder="Lugar">
+                                <input type="text" name "titulo3" id="titulo3" placeholder="Titulo">
+                            </div>
 
                         </fieldset>
                     </td>
@@ -78,28 +95,35 @@
                 <tr>
                     <td>
                         <section>
+                            <a name="Apartado2"></a>
                             <fieldset>
-                                <legend>EXPERIENCIA LABORAL</legend>
+                                <legend>
+                                    EXPERIENCIA LABORAL
+                                    <a class="ancla" href="#arriba" title="Ir Arriba">Ir arriba</a>
+                                </legend>
                                 <label for="empresa1">Empresa 1:</label>
+                                <br/>
                                 <input type="text" name "empresa1" id="empresa1" placeholder="nombre de la empresa">
-                                <label for="info1">Otro idioma</label>
-                                <textarea name="info1" id="info1" placeholder="Puesto,logros,años,etc."></textarea>
+                                <br/>
+                                <textarea cols="60" rows="4" name="info1" id="info1" maxlength="200" placeholder="Puesto,logros,años,etc."></textarea>
                                 <br/>
 
 
                                 <div style="text-align:top">
                                     <label for="empresa2">Empresa 2:</label>
+                                    <br/>
                                     <input type="text" name "empresa2" id="empresa2" placeholder="nombre de la empresa">
-                                    <label for="info2">Otro idioma</label>
-                                    <textarea name="info2" id="info2" placeholder="Puesto,logros,años,etc."></textarea>
+                                    <br/>
+                                    <textarea cols="60" rows="4" name="info2" id="info2" maxlength="200" placeholder="Puesto,logros,años,etc."></textarea>
 
                                 </div>
 
 
                                 <label for="empresa3">Empresa 3:</label>
+                                <br/>
                                 <input type="text" name "empresa3" id="empresa3" placeholder="nombre de la empresa">
-                                <label for="info3">Otro idioma</label>
-                                <textarea name="info3" id="info3" placeholder="Puesto,logros,años,etc."></textarea>
+                                <br/>
+                                <textarea cols="60" rows="4" name="info3" id="info3" maxlength="200" placeholder="Puesto,logros,años,etc."></textarea>
                                 <br/>
                             </fieldset>
                         </section>
@@ -108,7 +132,11 @@
                     <td>
                         <section>
                             <fieldset>
-                                <legend>IDIOMAS</legend>
+                                <legend>
+                                    IDIOMAS
+                                    <a class="ancla" href="#arriba" title="Ir Arriba">Ir arriba</a>
+                                </legend>
+                                <hr/>
                                 <label>Idioma 1:</label>
                                 <select name="idioma">
                                         <option>Español</option>
@@ -127,6 +155,7 @@
                                 <input type="radio" name="nivel" id="basico" value="basico" />
                                 <label for="basico">Basico</label>
                                 </br>
+                                <hr/>
                                 <label>Idioma 2:</label>
                                 <select name="idioma">
                                              <option>Español</option>
@@ -145,6 +174,7 @@
                                 <input type="radio" name="nivel" id="basico" value="basico" />
                                 <label for="basico">Basico</label>
                                 </br>
+                                <hr/>
                                 <label>Idioma 3:</label>
                                 <select name="idioma">
                                                   <option>Español</option>
@@ -163,8 +193,10 @@
                                 <input type="radio" name="nivel" id="basico" value="basico" />
                                 <label for="basico">Basico</label>
                                 </br>
+                                <hr/>
                                 <label for="area">Otro idioma</label>
-                                <textarea name="area" id="area" placeholder="Introduce aqui si tienes conocimientos de otros idiomas"></textarea>
+                                <br/>
+                                <textarea cols="60" rows="4" name="area" id="area" maxlength="200" placeholder="Introduce aqui si tienes conocimientos de otros idiomas"></textarea>
                             </fieldset>
                         </section>
                     </td>
@@ -172,8 +204,12 @@
             </table>
 
             <section>
+                <a name="Apartado3"></a>
                 <fieldset>
-                    <legend>EXTRAS</legend>
+                    <legend>
+                        EXTRAS
+                        <a class="ancla" href="#arriba" title="Ir Arriba">Ir arriba</a>
+                    </legend>
                     <label for="url">Pagina de interes:</label>
                     <input type="url" name "url" id="url" placeholder="red social">
                     <br/>
@@ -185,14 +221,16 @@
                     <br/>
                 </fieldset>
             </section>
-
+            <hr>
             <input type="submit"> <input type="reset">
+            <hr>
         </form>
 
     </main>
     <footer>
         <h4>Jesús Lloret Quero</h4>
     </footer>
+    <script src="./s05_formcv/dropzone.js"></script>
 </body>
 
 </html>
